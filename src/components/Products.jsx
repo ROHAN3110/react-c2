@@ -40,7 +40,7 @@ useEffect(()=>{
  axios.get(`http://localhost:8080/products?_page=${page}&_limit=${limit}`).then((response)=>{
    setproduct(response.data);
  })  
- },[page,limit])
+ },[page,limit,product])
 
   return (
     // <Flex>
